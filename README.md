@@ -15,11 +15,11 @@ to process an email you will need to point to a .eml file.  If you drag an email
 
 example output
 
-`32:05:18 - Tammy's vein: ***** 01:32:05:18 
-33:37:20 - Pride's line: ***** 01:33:37:20 
-33:52:00 - Pride's line: ***** 01:33:52:00 
-34:08:15 - Pride's line: ***** 01:34:08:15 
-34:25:04 - Pride's line: ***** 01:34:25:04 
+`32:05:18 - Tammy's vein: ***** 01:32:05:18  
+33:37:20 - Pride's line: ***** 01:33:37:20  
+33:52:00 - Pride's line: ***** 01:33:52:00  
+34:08:15 - Pride's line: ***** 01:34:08:15  
+34:25:04 - Pride's line: ***** 01:34:25:04  
 34:41:09 - Pride's line: ***** 01:34:41:09 `
 
 ---
