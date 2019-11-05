@@ -1,8 +1,9 @@
-#email_process
+# email_process
 
 basic email processing fishes out timestamps.
 
-#Brian you should be able to start the virtualenvironment from within this dir with the following command:
+# Brian! 
+you should be able to start the virtualenvironment from within this dir with the following command:
 `source /venv/bin/activate`
 once that is up and running to exit use:
 `deactivate`
