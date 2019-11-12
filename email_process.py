@@ -23,16 +23,11 @@ parsed = eml_parser.eml_parser.decode_email_b(data, include_raw_body=True)
 eml_text = parsed['body'][0]['content']
 
 for line in eml_text.split('\n'):
-    m = re.search(r"[\d]{2}:[\d]{2}:[\d]{2}[^:]", line)
+    m = re.search("([\d]{2}:)??([\d]{2}:[\d]{2}:[\d]{2})(?!:)", line)
     if m:
-        prefix = line.index(m.group())
-        if prefix != 0:
-            nums = re.search("[\d]{2}:", line[:prefix])
-            if nums:
-                updated_stamp = nums.group(0) + m.group(0)
-            else:
-                updated_stamp = "01:{}".format(m.group(0))
+        if m.groups()[0]:
+            updated_stamp = m.groups()[0] + m.groups()[1]
         else:
-            updated_stamp = "01:{}".format(m.group(0))
+            updated_stamp = "01:" + m.groups()[1]
 
-        print("{}: ***** {}".format(line, updated_stamp))
+        print("{}: **:::** {}".format(line, updated_stamp))
